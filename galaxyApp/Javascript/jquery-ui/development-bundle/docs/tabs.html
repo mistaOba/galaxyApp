@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI tabs documentation</title>
+
+	<style>
+	body {
+		font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif"
+	}
+	.gutter {
+		display: none;
+	}
+	</style>
+</head>
+<body>
+
+<script>{
+		"title":
+			"Tabs Widget",
+		"excerpt":
+			"A single content area with multiple panels, each associated with a header in a list.",
+		"termSlugs": {
+			"category": [
+				"widgets"
+			]
+		}
+	}</script><article id="tabs1" class="entry widget"><h2 class="section-title">
+<span>Tabs Widget</span><span class="version-details">version added: 1.0</span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>A single content area with multiple panels, each associated with a header in a list.</p>
+<section id="quick-nav"><header><h2>QuickNav<a href="#entry-examples">Examples</a>
+</h2></header><div class="quick-nav-section">
+<h3>Options</h3>
+<div><a href="#option-active">active</a></div>
+<div><a href="#option-collapsible">collapsible</a></div>
+<div><a href="#option-disabled">disabled</a></div>
+<div><a href="#option-event">event</a></div>
+<div><a href="#option-heightStyle">heightStyle</a></div>
+<div><a href="#option-hide">hide</a></div>
+<div><a href="#option-show">show</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Methods</h3>
+<div><a href="#method-destroy">destroy</a></div>
+<div><a href="#method-disable">disable</a></div>
+<div><a href="#method-enable">enable</a></div>
+<div><a href="#method-load">load</a></div>
+<div><a href="#method-option">option</a></div>
+<div><a href="#method-refresh">refresh</a></div>
+<div><a href="#method-widget">widget</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Events</h3>
+<div><a href="#event-activate">activate</a></div>
+<div><a href="#event-beforeActivate">beforeActivate</a></div>
+<div><a href="#event-beforeLoad">beforeLoad</a></div>
+<div><a href="#event-create">create</a></div>
+<div><a href="#event-load">load</a></div>
+</div></section><div class="longdesc" id="entry-longdesc">
+		<p>Tabs are generally used to break content into multiple sections that can be swapped to save space, much like an accordion.</p>
+
+		<p>The content for each tab panel can be defined in-page or can be loaded via Ajax; both are handled automatically based on the <code>href</code> of the anchor associated with the tab. By default tabs are activated on click, but the events can be changed to hover via the <a href="#option-event"><code>event</code></a> option.</p>
+
+		<h3>Keyboard interaction</h3>
+
+		<p>When focus is on a tab, the following key commands are available:</p>
+		<ul>
+			<li>UP/LEFT: Move focus to the previous tab. If on first tab, moves focus to last tab. Activate focused tab after a short delay.</li>
+			<li>DOWN/RIGHT: Move focus to the next tab. If on last tab, moves focus to first tab. Activate focused tab after a short delay.</li>
+			<li>HOME: Move focus to the first tab. Activate focused tab after a short delay.</li>
+			<li>END: Move focus to the last tab. Activate focused tab after a short delay.</li>
+			<li>SPACE: Activate panel associated with focused tab.</li>
+			<li>ENTER: Activate or toggle panel associated with focused tab.</li>
+			<li>ALT+PAGE UP: Move focus to the previous tab and immediately activate.</li>
+			<li>ALT+PAGE DOWN: Move focus to the next tab and immediately activate.</li>
+		</ul>
+
+		<p>When focus is in a panel, the following key commands are available:</p>
+		<ul>
+			<li>CTRL+UP: Move focus to associated tab.</li>
+			<li>ALT+PAGE UP: Move focus to the previous tab and immediately activate.</li>
+			<li>ALT+PAGE DOWN: Move focus to the next tab and immediately activate.</li>
+		</ul>
+	</div>
+<h3>Additional Notes:</h3>
+<div class="longdesc"><ul><li>
+			This widget requires some functional CSS, otherwise it won't work. If you build a custom theme, use the widget's specific CSS file as a starting point.
+		</li></ul></div>
+<section id="options"><header><h2 class="underline">Options</h2></header><div id="option-active" class="api-item first-item">
+<h3>active<span class="option-type"><strong>Type: <

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Galaxy App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap-->
+    <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Insert CSS Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="galaxy.css">
+</head>
+
+<body>
+<div class="droppable">
+    <div id="main">
+    
+    <!-- Div for Planets-->
+        <div id="planets" draggable="true" ondragstart="dragStart(event)">
+            <!--Planets-->
+            <span class="draggable">
+                    <div class ="mercury"></div>
+                    <div class ="venus"></div>
+                    <div class ="earth"></div>
+                    <div class ="mars"></div>
+                    <div class ="jupiter"></div>
+                    <div class ="saturn"></div>
+                    <div class ="uranus"></div>
+                    <div class ="neptune"></div>
+            </span>
+        </div>
+    
+    </div>
+</div>
+    <!--Insert Javascript-->
+    
+    <script type="text/javascript" src="galaxy.js"></script>
+    
+</body>
+</html>

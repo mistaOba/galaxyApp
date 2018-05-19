@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI tooltip documentation</title>
+
+	<style>
+	body {
+		font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif"
+	}
+	.gutter {
+		display: none;
+	}
+	</style>
+</head>
+<body>
+
+<script>{
+		"title":
+			"Tooltip Widget",
+		"excerpt":
+			"Customizable, themeable tooltips, replacing native tooltips.",
+		"termSlugs": {
+			"category": [
+				"widgets"
+			]
+		}
+	}</script><article id="tooltip1" class="entry widget"><h2 class="section-title">
+<span>Tooltip Widget</span><span class="version-details">version added: 1.9</span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>Customizable, themeable tooltips, replacing native tooltips.</p>
+<section id="quick-nav"><header><h2>QuickNav<a href="#entry-examples">Examples</a>
+</h2></header><div class="quick-nav-section">
+<h3>Options</h3>
+<div><a href="#option-content">content</a></div>
+<div><a href="#option-disabled">disabled</a></div>
+<div><a href="#option-hide">hide</a></div>
+<div><a href="#option-items">items</a></div>
+<div><a href="#option-position">position</a></div>
+<div><a href="#option-show">show</a></div>
+<div><a href="#option-tooltipClass">tooltipClass</a></div>
+<div><a href="#option-track">track</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Methods</h3>
+<div><a href="#method-close">close</a></div>
+<div><a href="#method-destroy">destroy</a></div>
+<div><a href="#method-disable">disable</a></div>
+<div><a href="#method-enable">enable</a></div>
+<div><a href="#method-open">open</a></div>
+<div><a href="#method-option">option</a></div>
+<div><a href="#method-widget">widget</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Events</h3>
+<div><a href="#event-create">create</a></div>
+<div><a href="#event-open">open</a></div>
+<div><a href="#event-close">close</a></div>
+</div></section><div class="longdesc" id="entry-longdesc">
+		<p>Tooltip replaces native tooltips, making them themable as well as allowing various customizations:</p>
+
+		<ul>
+			<li>Display other content than just the title, like inline footnotes or extra content retrieved via Ajax.</li>
+			<li>Customize the positioning, e.g., to center the tooltip above elements.</li>
+			<li>Add extra styling to customize the appearance, for warning or error fields.</li>
+		</ul>
+
+		<p>A fade animation is used by default to show and hide the tooltip, making the appearance a bit more organic, compared to just toggling the visiblity. This can be customized with the <a href="#option-show"><code>show</code></a> and <a href="#option-hide"><code>hide</code></a> options.</p>
+
+		<p>The <a href="#option-items"><code>items</code></a> and <a href="#option-content"><code>content</code></a> options need to stay in-sync. If you change one of them, you need to change the other.</p>
+
+		<p>In general, disabled elements do not trigger any DOM events. Therefore, it is not possible to properly control tooltips for disabled elements, since we need to listen to events to determine when to show and hide the tooltip. As a result, jQuery UI does not guarantee any level of support for tooltips attached to disabled elements. Unfortunately, this means that if you require tooltips on disabled elements, you may end up with a mixture of native tooltips and jQuery UI tooltips.</p>
+	</div>
+<h3>Additional Notes:</h3>
+<div class="longdesc"><ul><li>
+			This widget requires some functional CSS, otherwise it won't work. If you build a custom theme, use the widget's specific CSS file as a starting point.
+		</li></ul></div>
+<section id="options"><header><h2 class="underline">Options</h2></header><div id="option-content" class="api-item first-item">
+<h3>content<span class="option-type"><strong>Type: </strong><a href="http://api.jquery.com/Types/#Function">Function</a>() or <a href="http://api.jquery.com/Types#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>function returning the title attribute</code>
+</div>
+<div>
+				<p>The content of the tooltip.</p>
+
+				<p><em>When changing this option, you likely need to also chan

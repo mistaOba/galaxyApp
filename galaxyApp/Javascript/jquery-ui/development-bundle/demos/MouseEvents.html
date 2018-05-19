@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hover</title>
+ <script type="text/javascript" 
+   src="../../jquery-1.9.1.js">
+</script> 
+<style type="text/css">
+.box  {
+     margin:  50px;
+     padding:  30px;
+     width: 50px;
+     border: 3px solid black;
+      }
+.colorBox {
+     background-color:  #abacab;
+      }
+</style>
+</head>
+<body>
+<h1>Hover</h1>
+<hr>
+<br />
+<br />
+<br />
+<span class="box">Box 1</span>
+<span class="box">Box 2</span>
+<span class="box">Box 3</span>
+<script type="text/javascript"><script>
+$(document).ready(function() {
+     $(".box").hover(
+        //Hover over
+        function() {
+             $(this).addClass("colorBox");
+        };
+        //Hover out
+        function() {
+          $(this).removeClass("colorBox");
+          };
+      );
+});
+</body>
+</html>
